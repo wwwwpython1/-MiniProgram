@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text class='title'>pages/home/home.wxml</text>
+<button size='mini'>123</button>
+<image src='http://dmimg.5054399.com/allimg/pkm/pk/22.jpg'></image>
