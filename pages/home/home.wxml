@@ -1,4 +1,30 @@
 <!--pages/home/home.wxml-->
-<text class='title'>pages/home/home.wxml</text>
-<button size='mini'>123</button>
-<image src='http://dmimg.5054399.com/allimg/pkm/pk/22.jpg'></image>
+<!-----1数据绑定-mastache-->
+<text>hello {{name}},{{age}}</text>
+<!--2列表展示 wx:for--->
+<!-- <view>{{student[0].name}}</view> -->
+<view wx:for="{{student}}">{{item.name}}</view>
+
+<!--3事件监听-->
+<view>当前计数:{{counter}}</view>
+
+<!---
+命令式编程：dom操作
+声明式编程：Vue/React
+--->
+<button size='mini' bindtap='add'>+</button>
+<button size='mini' bindtap='remove'>-</button>
+
+<!---渲染层   webvire
+wxml
+wxss
+--->
+<!---逻辑层  jscore
+js
+-->
+<!---wxml渲染成一个js对象渲染为dom结构--
+渲染为dom树结构--
+webview渲染数据--
+数据发生变化进行diff算法-
+刷新变化数据（局部刷新）
+---->
